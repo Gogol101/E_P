@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Box Generator </title>
+</head>
+<body>
+    <div class="welcomeWindow usNone">
+        <h1>welcome</h1>
+    </div>
+    <div class="delitWindow usNone">
+        <h1>obgect was delite</h1>
+    </div>
+    <div class="copyWindow usNone">
+        <h1>CSS code was copied</h1>
+    </div>
+    <!--  -->
+    <div class="main">
+        <div class="leftHalf">
+            <div class="header">
+                <h1 class="title usNone">Settings</h1>
+                <div class="mainButtons">
+
+                    <div class="create">
+                        <img src="img/icons/free-icon-tap-4610261.png" alt="">
+                    </div>
+
+                    <div class="delite">
+                        <img src="img/icons/trash-bin.png" alt="">
+                    </div>
+
+                    <div class="random">
+                        <img src="img/icons/free-icon-dice-9312559.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="width usNone">
+                <div class="hoeisontalImg">
+                    <img src="img/mainIcons/free-icon-two-arrow-9385968.png" alt="">
+                </div>
+                <p class="width">width: <span id="widthSP2">40</span> px;</p>
+                <input type="range" min="0" max="700" value="40" class="slider" id="myRange1">
+            </div>
+
+            <div class="height usNone">
+                <div class="verticalImg">
+                    <img src="img/mainIcons/free-icon-up-and-down-arrow-7693465.png" alt="">
+                </div>
+                <p class="height">height: <span id="heightSP2">40</span> px;</p>
+                <input type="range" min="0" max="700" value="40" class="slider" id="myRange2">
+            </div>
+            <div class="border usNone">
+                <div class="borderImg">
+                    <img src="img/mainIcons/free-icon-select-204566.png" alt="">
+                </div>
+                <p class="border usNone">border: <span id="borderSP2">0</span> px;</p>
+                <input type="range" min="0" max="20" value="0" class="slider" id="myRange3">
+            </div>
+            <div class="borderRadius usNone">
+                <div class="borRadImg">
+                    <img src="img/mainIcons/free-icon-graphic-design-8695104.png" alt="">
+                </div>
+                <p class="border-radius">border-radius: <span id="borderRadiusSP2">0</span> px;</p>
+                <input type="range" min="0" max="400" value="0" class="slider" id="myRange4">
+            </div>
+            <!--  -->
+            <div class="colorBox usNone">
+                <div class="red">
+                    <div class="redCol"></div>
+                    <p class="Red">Red: <span id="Red2">255</span> ;</p>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="myRange5">
+                </div>
+
+                <div class="green">
+                    <div class="greenCol"></div>
+                    <p class="Green">Green: <span id="Green2">255</span> ;</p>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="myRange6">
+                </div>
+
+                <div class="blue">
+                    <div class="blueCol"></div>
+                    <p class="Blue">Blue: <span id="Blue2">255</span> ;</p>
+                    <input type="range" min="0" max="255" value="255" class="slider" id="myRange7">
+                </div>
+            </div>
+
+            <div class="itogCol"></div>
+            <div class="codeBox">
+                <ol>
+                    <li><p>.box{</p></li>
+                    <li><div class="box"><p>    width: <span id="widthSP"></span>px;</p></div></li>
+                    <li><div class="box"><p>    height: <span id="heightSP"></span>px;</p></div></li>
+                    <li><div class="box"><p>    border: <span id="borderSP"></span> solid rgb(0,0,0);</div></li>
+                    <li><div class="box"><p>    border-radius: <span id="borderRadiusSP"></pspan>px;</div></li>
+                    <li><div class="box"><p>    bacground-color: (<span id="Red">255</span> , <span id="Green">255</span> , <span id="Blue">255</span>);</p></div></li>
+                    <li><p>}</p></li>
+                </ol>
+            </div>
+            <div class="saveBTN">Save CSS code</div>
+        </div>
+        <div class="rightHalf">
+            <div class="prostranstvo">
+                <div style="width: 40px; height: 40px; background-color: rgb(255, 255, 255);" class="block"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
